@@ -9,7 +9,8 @@ public class ProbServices {
 	private Probability prob = new Probability();
 	private String placeHolder;
 	
-	public void startStarForce() {
+	public void startStarForce(int inputStar) {
+		sfi.setCurrentStar(inputStar);
 		do {
 			prob.clearBag();
 			switch (sfi.getCurrentStar()) {
